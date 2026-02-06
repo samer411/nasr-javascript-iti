@@ -11,11 +11,12 @@
         let arr = [];
         for (let i=0;i<3;i++){
             num = prompt("Enter a number:");
-arr.push(+num);
+            arr.push(+num);
         }
+        document.write(`<h1> Addding -- Multiplication -- Division of three numbers </h1> <hr>`);
         document.write(`Sum of the three values is ${arr[0]}, ${arr[1]}, ${arr[2]} : ${arr.reduce((a,b) => a+b)} <br>`);
         document.write(`Multiplications of the three values ${arr[0]}, ${arr[1]}, ${arr[2]} is : ${arr.reduce((a,b) => a*b)} <br>`);
-        document.write(`Division of the three values is ${arr[0]}, ${arr[1]}, ${arr[2]} : ${arr.reduce((a,b) => a/b)}`);
+        document.write(`Division of the three values is ${arr[0]}, ${arr[1]}, ${arr[2]} : ${arr.reduce((a,b) => a/b).toFixed(2)} <br>`);
     </script>
 </body>
 </html>
