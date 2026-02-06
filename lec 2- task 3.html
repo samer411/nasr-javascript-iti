@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num;
+        let arr = [];
+        for (let i=0;i<3;i++){
+            num = prompt("Enter a number:");
+arr.push(+num);
+        }
+        document.write(`Sum of the three values is ${arr[0]}, ${arr[1]}, ${arr[2]} : ${arr.reduce((a,b) => a+b)} <br>`);
+        document.write(`Multiplications of the three values ${arr[0]}, ${arr[1]}, ${arr[2]} is : ${arr.reduce((a,b) => a*b)} <br>`);
+        document.write(`Division of the three values is ${arr[0]}, ${arr[1]}, ${arr[2]} : ${arr.reduce((a,b) => a/b)}`);
+    </script>
+</body>
+</html>
